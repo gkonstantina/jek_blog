@@ -1,7 +1,39 @@
 ---
 layout: default
 ---
-<section id="banner">
+<div id="banner">
   <h2>Three99</h2>
   <p>Another fine responsive site template freebie by HTML5 UP.</p>
-</section>
+</div>
+
+<div class="container" id="main">
+  <div class="box special">
+    <h2>Labore deserunt est anim excepteur culpa.</h2>
+    <p>
+      Dolore do aliqua irure consectetur sint incididunt nostrud dolor do sit sint laboris.
+       Magna eiusmod sint consectetur magna anim officia nulla esse.
+       Et reprehenderit pariatur cillum elit Lorem veniam velit pariatur irure ut aliquip deserunt consequat non.
+       Minim ullamco voluptate anim labore incididunt cillum esse commodo dolor veniam deserunt ipsum qui.
+       Consequat do magna eiusmod ipsum exercitation veniam non quis ullamco sint mollit.
+    </p>
+
+    <div class="image featured">
+      <img src="images/pic01.jpg" alt="" />
+    </div>
+  </div>
+  <div class="box special features">
+
+    <div class="row">
+      {% for post in site.posts limit:3 %}
+        <div class="col-sm-4 text-center recent3">
+          <span class="image featured"> <img src="images/{{post.img.small}}" > </span>
+          <h2>
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          </h2>
+          <p>{{ post.excerpt }}</p>
+        </div>
+
+      {% endfor %}
+    </div>
+  </div >
+</div>

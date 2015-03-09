@@ -2,6 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
+@import 'vars';
 
 
 
@@ -14,7 +15,7 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
-$background-color: #fdfdfd;
+$background-color: #f5f5f5;
 $brand-color:      #2a7ae2;
 
 $grey-color:       #828282;
@@ -121,3 +122,133 @@ $on-laptop:        800px;
 			}
 		}
 	}
+
+  #main {
+    margin-top: -14em;
+  }
+
+  .box {
+  background: #fff;
+  border-radius: $size-border-radius;
+  box-shadow: 0 2px 0 0 $color-border;
+  margin: 0 0 $size-element-margin 0;
+  padding: $box-padding;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  h2 {
+    color: #423e3e;
+  }
+
+  .recent3 {
+    padding: 5%;
+  }
+
+  &.alt {
+    background: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin: 0 0 $size-element-margin 0;
+    padding: 0 !important;
+  }
+
+  &.features {
+    .features-row {
+      border-top: solid 2px $color-border;
+      position: relative;
+
+      &:after {
+        clear: both;
+        content: '';
+        display: block;
+      }
+
+      div {
+        float: left;
+        padding: $box-padding;
+        width: 50%;
+
+        :last-child {
+          margin-bottom: 0;
+        }
+
+        &:nth-child(2n) {
+          &:before {
+            background: $color-border;
+            content: '';
+            display: block;
+            height: 100%;
+            margin-left: -3em;
+            position: absolute;
+            top: 0;
+            width: 2px;
+          }
+
+          padding-right: 0;
+        }
+
+        &:nth-child(2n-1) {
+          padding-left: 0;
+        }
+      }
+
+      &:first-child {
+        border-top: 0;
+
+        div {
+          padding-top: 0;
+        }
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+
+        div {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+
+  &.special {
+    text-align: center;
+  }
+
+  .image {
+    &.featured {
+      border-radius: 0;
+      display: block;
+      margin: $box-padding 0 $box-padding ($box-padding * -1);
+      position: relative;
+      width: calc(100% + #{$box-padding * 2});
+
+      img {
+        border-radius: 0;
+        display: block;
+        width: 100%;
+      }
+
+      &:first-child {
+        border-radius: $size-border-radius $size-border-radius 0 0;
+        margin-bottom: $box-padding;
+        margin-top: $box-padding * -1;
+
+        img {
+          border-radius: $size-border-radius $size-border-radius 0 0;
+        }
+      }
+
+      &:last-child {
+        border-radius: 0 0 $size-border-radius $size-border-radius;
+        margin-bottom: $box-padding * -1;
+        margin-top: $box-padding;
+
+        img {
+          border-radius: 0 0 $size-border-radius $size-border-radius;
+        }
+      }
+    }
+  }
+}

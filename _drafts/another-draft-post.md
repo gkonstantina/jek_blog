@@ -4,7 +4,7 @@ title:  "Experimenting with drafts"
 date:   2015-03-06 11:30:44
 categories: jekyll update
 img:
-  small:  pic03.jpg
+  small:  pic04.jpg
   medium: pic01.jpg
   large:  pic01.jpg
 ---
