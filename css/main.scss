@@ -10,7 +10,7 @@
 $base-font-family: "Trebuchet MS", Helvetica, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.5;
+$base-line-height: 2;
 
 $spacing-unit:     30px;
 
@@ -66,6 +66,7 @@ $on-laptop:        800px;
 .navbar-default  .navbar-nav>li>a  {
   color: #fff;
   font-size: 1.3em;
+
 }
 
 #banner {
@@ -126,6 +127,11 @@ $on-laptop:        800px;
   #main {
     margin-top: -14em;
     padding-bottom: 100px;
+  }
+
+  #blog-main {
+    margin-top: 12em;
+    text-align:justify;
   }
 
   #subscription {
@@ -335,4 +341,8 @@ $on-laptop:        800px;
       color: darken(grey, 20%);
     }
   }
+}
+
+a:hover {
+    color: #B1F500;
 }
