@@ -7,14 +7,14 @@
 
 
 // Our variables
-$base-font-family: "Trebuchet MS", Helvetica, sans-serif;
+$base-font-family:  'Trebuchet MS', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 2;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       rgb(118, 131, 142);
 $background-color: #f5f5f5;
 $brand-color:      #2a7ae2;
 
@@ -208,7 +208,7 @@ $on-laptop:        800px;
   }
 
   h2 {
-    color: #423e3e;
+    color: $text-color;
   }
 
   .recent3 {
