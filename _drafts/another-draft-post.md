@@ -5,8 +5,8 @@ date:   2015-03-06 11:30:44
 categories: jekyll update
 img:
   small:  pic04.jpg
-  medium: pic01.jpg
-  large:  pic01.jpg
+  medium: pic04.jpg
+  large:  pic04.jpg
 ---
 Ad Lorem veniam sunt excepteur occaecat dolore eiusmod voluptate. Ut excepteur Lorem labore qui elit do anim nostrud sint ut non dolor. Dolore magna irure incididunt consequat nisi. Duis Lorem laborum sunt eiusmod tempor tempor irure ipsum.
 
