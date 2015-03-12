@@ -22,6 +22,8 @@ $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
 
+$about-back: #D3C6C6;
+
 // Width of the content area
 $content-width:    800px;
 
@@ -343,6 +345,11 @@ $on-laptop:        800px;
   }
 }
 
-a:hover {
-    color: #B1F500;
+
+.crew {
+  background-color: #DADADA;
+
+  .name {
+    color: rgb(110, 110, 110);
+  }
 }

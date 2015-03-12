@@ -7,35 +7,42 @@ layout: default
     <h2>About us</h2>
     <hr>
     <p>Learn more about us</p>
-    <div class="box text-justify">
-      <div class="row container-fluid">
-        <div class="image featured">
-          <img src="{{ '/images/pic01.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="" />
-        </div>
-        <h3>About us</h3>
-        <p>
-          Programming web applications with Ruby on Rails, PostgreSQL (or MongoDB), mobile-first CSS and JavaScript.
-          We host them either on EC2 or Heroku. We are pretty good with this stuff and we are doing it with passion and honesty.
-        </p>
-        <br>
-        <h3>Products</h3>
-        <p>
-          Although entrepreneurs at heart, we are still far from being full-time on our own products.
-          We are trying though and there is at least one app that we are proud of. That is Vetrian, a management suite for veterinarians.
-        </p>
-      </div>
-        <br>
-      <div class="container-fluid row">
-        <h3>Crew</h3>
-        <div class="col-xs-6" style="padding-left: 0; border-right: 2px dotted #76838e;">
-          <strong>Dimitris Dovinos</strong> is a web application developer with broad background ranging from electrical and mechanical engineering,
-           semiconductor physics (single electronics - nano-structure fabrication)
-          to software engineering. Main interest is the development of value for money software that serves real needs and is fun to use.
-        </div>
-        <div class="col-xs-6">
-          <strong>Vassilis Terzopoulos</strong> is a <a href="http://f2em.com/" target="_blank">front end engineer</a>, passionate with writing readable code and creating responsive web application interfaces.
-        </div>
-      </div>
-    </div>
   </header>
+  <div class="box text-justify">
+    <div class="row container-fluid">
+      <div class="image featured">
+        <img src="{{ '/images/pic01.jpg' | prepend: site.baseurl | replace: '//', '/' }}" alt="" />
+      </div>
+      <h3>About us</h3>
+      <p>
+        Programming web applications with Ruby on Rails, PostgreSQL (or MongoDB), mobile-first CSS and JavaScript.
+        We host them either on EC2 or Heroku. We are pretty good with this stuff and we are doing it with passion and honesty.
+      </p>
+      <br>
+      <h3>Products</h3>
+      <p>
+        Although entrepreneurs at heart, we are still far from being full-time on our own products.
+        We are trying though and there is at least one app that we are proud of. That is Vetrian, a management suite for veterinarians.
+      </p>
+    </div>
+    <br>
+  </div>
+  <div class="box special features crew">
+    <h3 class=text-justify>Crew</h3>
+    <hr>
+    <div class="row">
+        <div class="col-sm-6 text-center recent3">
+          <p>
+            <strong class="name">Dimitris Dovinos</strong> is a web application developer with broad background ranging from electrical and mechanical engineering,
+             semiconductor physics (single electronics - nano-structure fabrication)
+            to software engineering. Main interest is the development of value for money software that serves real needs and is fun to use.
+          </p>
+        </div>
+        <div class="col-sm-6 text-center recent3">
+          <p>
+            <strong class="name">Vassilis Terzopoulos</strong> is a <a href="http://f2em.com/" target="_blank"><strong>front end engineer</strong></a>, passionate with writing readable code and creating responsive web application interfaces.
+          </p>
+        </div>
+    </div>
+  </div >
 </div>
