@@ -353,3 +353,22 @@ $on-laptop:        800px;
     color: rgb(110, 110, 110);
   }
 }
+
+.form-group {
+  .contact {
+    padding-bottom: 2em;
+  }
+
+  textarea {
+    height: 12em;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea{
+    background-color: $grey-color-light;
+  }
+}
+
+#contact-submit{
+}
