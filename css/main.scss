@@ -228,9 +228,7 @@ $on-laptop:        800px;
     color: $text-color;
   }
 
-  .recent3 {
-    padding: 5%;
-  }
+
 
   &.alt {
     background: none !important;
@@ -385,5 +383,15 @@ $on-laptop:        800px;
   }
 }
 
-#contact-submit{
+.recent3 {
+  padding: 5%;
+
+}
+
+.post-thumbs {
+  border-radius: 6px 6px 6px 6px;
+
+  max-height: 200px;
+   overflow:hidden;
+   vertical-align: center;
 }
