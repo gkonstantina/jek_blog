@@ -55,9 +55,24 @@ $on-laptop:        800px;
 ;
 
 .navbar-default {
-  background-color: #444;
+  background-color: transparent;
   margin: 0px;
-  border-color: #444;
+  border: none;
+  position: absolute;
+  top: 0px;
+
+  &.med {
+    top:-50px;
+    transition: top 500ms ease;
+    position: absolute;
+    background-color: transparent;
+  }
+
+  &.alt {
+    top: 0px;
+    position: fixed;
+    background-color: #444;
+  }
 }
 
 .navbar-default .navbar-brand{
@@ -68,8 +83,8 @@ $on-laptop:        800px;
 .navbar-default  .navbar-nav>li>a  {
   color: #fff;
   font-size: 1.3em;
-
 }
+
 
 #banner {
 		background-attachment:	scroll,							fixed;

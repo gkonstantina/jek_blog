@@ -10,3 +10,24 @@
 	</ul>
 
 </footer>
+<script charset="utf-8">
+
+$( window ).scroll(function(){
+
+	if (($("body").scrollTop() >= 0) && ($("body").scrollTop() < 50) )
+	{
+		$("nav").removeClass('med');
+		$("nav").removeClass('alt');
+	}
+	if (($("body").scrollTop() > 50) && ($("body").scrollTop() < 400) )
+	{
+		$("nav").addClass('med');
+		$("nav").removeClass('alt');
+	}
+	else if ($("body").scrollTop() > 400)
+	{
+		$("nav").addClass('alt');
+	}
+});
+
+</script>
