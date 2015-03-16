@@ -54,7 +54,7 @@ $on-laptop:        800px;
         "syntax-highlighting"
 ;
 
-.navbar-default {
+.navbar-default#header-index {
   background-color: transparent;
   margin: 0px;
   border: none;
@@ -73,6 +73,7 @@ $on-laptop:        800px;
     position: fixed;
     background-color: #444;
   }
+
 }
 
 .navbar-default .navbar-brand{
@@ -83,6 +84,12 @@ $on-laptop:        800px;
 .navbar-default  .navbar-nav>li>a  {
   color: #fff;
   font-size: 1.3em;
+}
+
+#header-pages {
+  top: 0px;
+  position: fixed;
+  background-color: #444;
 }
 
 
@@ -378,8 +385,9 @@ $on-laptop:        800px;
 
   input[type='text'],
   input[type='email'],
-  textarea{
+  textarea {
     background-color: $grey-color-light;
+    border-color: rgba(255,255,255,0);
   }
 }
 
